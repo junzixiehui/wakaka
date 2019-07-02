@@ -1,0 +1,25 @@
+server:
+  port: 8801
+
+spring:
+  profiles:
+    active: dev
+
+info:
+    build:
+      arstifact: "@project.artifactId@"
+      name: "@project.name@"
+      description: "@project.description@"
+      version: "@project.version@"
+
+management:
+  security:
+    enabled: false
+  #spring boot management的缩写
+  context-path: /sbm
+
+endpoints:
+  trace:
+    enabled: false
+  loggers:
+    enabled: false

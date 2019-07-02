@@ -1,0 +1,11 @@
+#创建keyspace
+CREATE KEYSPACE demo WITH replication = {'class': 'SimpleStrategy', 'replication_factor' : 1};
+
+#创建表
+CREATE TABLE demo.t_temo (
+  id bigint,
+  userName varchar,
+  title text,
+  createTime bigint,
+  PRIMARY KEY (id)
+);
