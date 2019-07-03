@@ -1,5 +1,6 @@
 package com.junzixiehui.wakaka.application.service;
 
+import com.junzixiehui.wakaka.application.dto.req.OrderCreateReq;
 import com.junzixiehui.wakaka.application.dto.resp.OrderCreateResp;
 import com.zhouyutong.zapplication.api.Req;
 
@@ -11,6 +12,6 @@ import com.zhouyutong.zapplication.api.Req;
  */
 public interface OrderServiceI {
 
-	OrderCreateResp createOrder(Req req);
+	OrderCreateResp createOrder(OrderCreateReq req);
 
 }

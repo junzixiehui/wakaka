@@ -12,9 +12,6 @@ public class OrderCreateReq extends Req {
     @ApiModelProperty(value = "手机号", required = true)
     private String phone;
 
-    @ApiModelProperty(value = "城市id", required = true)
-    private String cityId;
-
     @ApiModelProperty(value = "用户经度", required = true)
     private String lng;
 
